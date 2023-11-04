@@ -69,7 +69,7 @@ public class Trie {
     }
     
     public Iterable<String> keysThatMatch(String s) {
-      List<String> res = new LinkedList<>();
+      List<String> res = new ArrayList<>();
       collect(root, "", s, res);
       return res;
     }
